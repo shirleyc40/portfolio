@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Shirley Chen</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+          <ul>
+            <li id = "name"><a href="#">Shirley Chen</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+    </header>
+
+      <div class="card"> 
+          <div class = "left-card">
+              <img src = "assets/images/profile.jpeg"/>
+          </div>
+          
+          <div class="right-card">
+             <p class = "intro-text">Hi! My name is <span>Shirley Chen</span></p>
+             <p class = "intro-p">I am a senior at Cornell University studying Computer Science and minoring in Business.</p>
+            <div class = "icons">
+                <a href="https://www.linkedin.com/in/shirley-chen-050719/" class="fab fa-linkedin"></a>
+                <a href="https://github.com/shirleyc40" class="fab fa-github"></a>
+                <a href="mailto:sc2552@cornell.edu" class="far fa-envelope"></a>
+                <a href="/assets/Chen_Shirley_Resume.pdf" class = "far fa-file" download></a>
+            </div>
+        </div>
+      </div>
+     
+      <div class = "about" id="about">
+        <h2>About Me</h2>
+        <p>I am a NYC native who loves to learn new skills and meet new people. My passion for Computer Science started with my 
+              eagerness to learn more about HTML/CSS. I love the feeling of building something step by step and working through all the obstacles in the way. With technology I hope to be able to help the society and give back. I hope to find a position 
+              where I am continuously challenged and can collaborate with different teams to bring impact into the society. Outside of work, I love to travel and bake!
+        </p>
+        <h3>Top Skills</h3>
+        <div class="circles">
+            <div class="circle" id="circle1">
+                <p>React Native</p>
+            </div>
+            <div class="circle" id="circle2">
+                <p>React.JS</p>
+            </div>
+            <div class="circle" id="circle3">
+                <p>Javascript</p>
+            </div>
+            <div class="circle" id="circle4">
+                <p>Java</p>
+            </div>
+            <div class="circle" id="circle5">
+                <p>Python</p>
+            </div>
+            <div class="circle" id="circle6">
+                <p>Figma</p>
+            </div>
+            <div class="circle" id="circle7">
+                <p>SQL</p>
+            </div>
+            <div class="circle" id="circle8">
+                <p>HTML/CSS</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id = "projects">
+        <h2>Projects</h2>
+        <div class="sudoku">
+            <div class = "left">
+                <img src = "assets/images/sudoku.png"/>
+            </div>
+            <div class="right">
+                <p class = "project-title">Sudoku Generator and Solver with image recognition</p>
+                <p class = "project-desc"> This is a sudoku solver that offers users the option to either generate a sudoku board of varying difficulties or to upload an image of the sudoku board. We then proceed to use constraint programming to solve the sudoku.
+                </p>
+                <p class = "project-desc">
+                    I worked in a group of 3, where I was mainly in charge of the solver and generator. We used python and a python library called py-constraint. To generate different levels, we used a prefilled base board and shuffled the rows, columns and sub-group. We then removed cells from highest density to lowest. 
+                </p>
+            </div>
+        </div>
+        <div class="unipantry">
+            <div class = "left">
+                <img src = "assets/images/unipantry.png"/>
+            </div>
+            <div class="right">
+                <p class = "project-title">UniPantry</p>
+                <p class = "project-desc">Unipantry is a student startup that aims to provide students a resource to achieve a well-balanced lifestyle by offering a product to manage their pantry, budget and nutrition. We also provide recipes and grocery shopping abilities to streamline the process. Currently, we are trying to partner with schools to including their dining hall options.
+                </p>
+                <p class = "project-desc">
+                    I was on the development team, focusing on building the app using React Native and firebase. I collaborated with other student developers, as well as our designers. We worked in an agile environment, with weekly standups and check ins. I was able to develop my communication skills and gain confidence in asking for help.
+                </p>
+            </div>
+        </div>
+        <div class="number-game">
+            <div class = "left">
+                <img src = "assets/images/numberGame.png"/>
+            </div>
+            <div class="right">
+                <p class = "project-title">Number Game</p>
+                <p class = "project-desc">This game was inspired by my high school teacher. In this game, the user's goal was to guess a random 6 digit number. For each guess, they will be told how many digits and positions are correct.
+                </p>
+                <p class = "project-desc">
+                    I designed most of the interface, getting feedback from my peers. I used React Native to create this app. Through this, I was able to develop my time managment and project planning skills. It was my first time using React Native, which made it more rewarding and valuable. It was enjoyable to feel passionate about the work I was doing.
+                </p>
+            </div>
+        </div>
+        <div class="slack">
+            <div class = "left">
+                <img src = "assets/images/slack.png"/>
+            </div>
+            <div class="right">
+                <p class = "project-title">Slack Design Case Study</p>
+                <p class = "project-desc">The purpose of this project was to pick an application and find a problem to solve. Once a problem was indentified, I had to create a solution for it and design the UX. 
+                </p>
+                <p class = "project-desc">
+                    This was an individual project that involved finding a people problem through user interviews and coming up with solutions through brainstorming sessions. The problem I was solving was how people found it difficult to manage notifications from different slack groups and channels.I really enjoyed this class/project because it taught me a different side of things; how designs are created, the different effects of placements of a component. To learn more, check out the <a href = "https://medium.com/@sc2552/slack-managing-messages-better-b6e2d495b182">Medium</a> article I wrote! 
+                </p>
+            </div>
+        </div>
+        <div class="CSA">
+            <div class = "left">
+                <img src = "assets/images/csa.PNG"/>
+            </div>
+            <div class="right">
+                <p class = "project-title">CSA Website</p>
+                <p class = "project-desc">This was a project for my web development class, where I worked with other students to design a website for an organization. We chose the Chinese Student Association. It involved interviewing the club representative, market research and collecting user feedback. The site featured an admin setting that allowed them to edit website info. We mainly used PHP and mySQL.
+                </p>
+                <p class = "project-desc">
+                    I collaborated with a few other students. I was mainly in charge of distributing tasks and facilitating conflicts. I worked on developing pages such as the events page which involved fetching information from the SQL server we created and displaying it. 
+                </p>
+            </div>
+        </div>
+    </div>
+      <script src="https://kit.fontawesome.com/fc368d8763.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="jquery-circle-progress/dist/circle-progress.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>

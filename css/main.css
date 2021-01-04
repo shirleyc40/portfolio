@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #E5ECF4;    
+    font-family: 'Montserrat', sans-serif;
+}
+.nav {
+  position:fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0 24px;
+    margin: 0;
+    align-items: center;
+}
+#name {
+  font-size: 1.3em;
+  flex: 1;
+  padding-top: 12px;
+  padding-left: 0;
+  background-color: transparent;
+  text-align: left
+}
+.nav li {
+    padding:  10px;
+    font-size: 1em;
+    text-align: center;
+}
+ 
+.nav a {
+    text-decoration: none;
+    transition: .3s background-color;
+    cursor: pointer;
+}
+.nav a:visited {
+  color: #828282
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 1em 20px;
+  padding: 1em 12px;
+  border-radius: 10px;
+  align-items: center;
+}
+.left-card img {
+  display: block;
+  margin:auto;
+  width: 70%;
+  margin-top: 20px;
+}
+.intro-text {
+  font-size: 1em;
+  text-align: center;
+}
+
+.intro-p {
+  text-align: center;
+  font-size: 1em;
+}
+p span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+  z-index: 1;
+}
+.icons {
+  text-align: center;
+}
+.fab , .far {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.fa-linkedin {
+  color: #007bb5;
+}
+.fa-github , .fa-envelope , .fa-file{
+  color: black;
+}
+
+#about, #projects{
+  padding: 24px 24px 16px ;
+  animation: fadeInUp 3s;
+  scroll-margin-top: 1em
+}
+
+.about p, h2 {
+  color: #828282
+}
+
+h3 {
+  color: #828282;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.circle {
+  width: calc(25vw - 10px);
+  text-align: center;
+  margin-right: -2px
+}
+.circle p{
+  font-size: 16px;
+  color: black
+}
+
+.left img {
+  display: block;
+  margin:auto;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.sudoku img, .CSA img {
+  width: 100%
+}
+.right {
+  text-align: center;
+}
+.project-title {
+  font-size: 1.5em;
+  color: #828282
+}
+.project-desc {
+  font-size: 1em;
+  text-align: left;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+#name {
+  font-size: 1.5em
+}
+
+.nav li {
+  font-size: 1.2em
+}
+li:hover {
+  background-color: rgba(134, 132, 132, 0.3);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+      "photo content";
+    align-items: start;
+    margin: 20px 50px  
+}
+.right-card {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 20px
+}
+.intro-text{
+  text-align: left;
+  line-height: 2;
+  margin: 0;
+}
+.intro-p {
+  text-align: left;
+}
+.icons{
+  text-align: left;
+}
+.left-card {
+    grid-area: photo;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.fa-linkedin {
+  padding-left: 0;
+}
+.left-card img {
+  padding: 0;
+  width: 40%;
+}
+
+.circles {
+  justify-content: space-evenly;
+}
+.circle {
+  width: 11vw;
+  text-align: center;
+}
+
+.circle p {
+  font-size: 16px;
+}
+
+.sudoku, .unipantry, .slack, .CSA, .number-game {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: 
+      "image descrip";
+  margin: 20px 0;
+  column-gap: 1em;
+
+}
+
+.left {
+  grid-area: image;
+  
+  margin: auto;
+}
+
+.sudoku img, .CSA img {
+  width: 90%;
+}
+.right {
+  grid-area: descrip;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-title {
+  align-self: flex-start;
+}
+.project-desc {
+  font-size: 1em;
+}
+}
