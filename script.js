@@ -89,9 +89,8 @@ $(document).on("scroll", function(){
 
 // }
 // })
+
 $(window).on('load', function() {
-    var navheight = document.getElementsByClassName("nav")[0].offsetHeight;
-    $(".card").css("margin-top", navheight + 30)
     var width = $(window).width();
     size = width >= 768? width/9 : (width-60)/4;
     createCircles(size)

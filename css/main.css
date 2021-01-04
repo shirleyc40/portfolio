@@ -53,6 +53,7 @@ body {
   padding: 1em 12px;
   border-radius: 10px;
   align-items: center;
+  margin-top: 81px;
 }
 .left-card img {
   display: block;
@@ -171,7 +172,7 @@ li:hover {
     grid-template-areas: 
       "photo content";
     align-items: start;
-    margin: 20px 50px  
+    margin: 81px 50px 20px 
 }
 .right-card {
     grid-area: content;
