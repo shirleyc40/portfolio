@@ -57,6 +57,13 @@ function createCircles(s) {
         fill: '#F8CEA7',
         thickness: 15
     });
+    $('#circle9').circleProgress({
+        value: 0.70,
+        size: s,
+        startAngle: -Math.PI/2,
+        fill: '#F8CEA7',
+        thickness: 15
+    });
 }
 
 $(document).on("scroll", function(){
@@ -92,12 +99,12 @@ $(document).on("scroll", function(){
 
 $(window).on('load', function() {
     var width = $(window).width();
-    size = width >= 768? width/9 : (width-60)/4;
+    size = width >= 768? width/12 : (width-60)/4;
     createCircles(size)
 })
 $(window).resize(function () {
     var width = $(window).width();
     console.log(width);
-    size = width >= 768? width/9 : (width-60)/4;
+    size = width >= 768? width/12 : (width-60)/4;
     createCircles(size)
 })

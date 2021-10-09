@@ -70,11 +70,16 @@ body {
   text-align: center;
   font-size: 1em;
 }
-p span {
-  display: block;
-  font-weight: bold;
-  font-size: 1.5em;
-  z-index: 1;
+.right-card h1 {
+  display: inline-flex;
+  font-size: 5em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: transparent;
+  background-image: url(../assets/images/background.jpg);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
 }
 .icons {
   text-align: center;
@@ -93,7 +98,7 @@ p span {
 }
 
 #about, #projects{
-  padding: 24px 24px 16px ;
+  padding: 24px 40px 16px ;
   animation: fadeInUp 3s;
   scroll-margin-top: 1em
 }
@@ -128,7 +133,7 @@ h3 {
   margin-top: 20px;
 }
 
-.sudoku img, .CSA img {
+.sudoku img, .CSA img, .bonappetit img {
   width: 100%
 }
 .right {
@@ -142,7 +147,12 @@ h3 {
   font-size: 1em;
   text-align: left;
 }
-
+@keyframes back {
+  100%{
+    background-position: 2000px 0;
+  }
+  
+}
 @keyframes fadeInUp {
   0% {
       opacity: 0;
@@ -153,7 +163,14 @@ h3 {
       transform: translateY(0);
   }
 }
-
+@media only screen and (min-width:320px) and (max-width: 767px) {
+  .right-card h1 {
+    font-size: 3em;
+  }
+  .right-card {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 768px) {
 #name {
   font-size: 1.5em
@@ -211,7 +228,7 @@ li:hover {
   justify-content: space-evenly;
 }
 .circle {
-  width: 11vw;
+  width: 10vw;
   text-align: center;
 }
 
@@ -219,7 +236,7 @@ li:hover {
   font-size: 16px;
 }
 
-.sudoku, .unipantry, .slack, .CSA, .number-game {
+.sudoku, .unipantry, .slack, .CSA, .number-game, .bonappetit {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-areas: 
@@ -231,11 +248,10 @@ li:hover {
 
 .left {
   grid-area: image;
-  
   margin: auto;
 }
 
-.sudoku img, .CSA img {
+.sudoku img, .CSA img, .bonappetit img {
   width: 90%;
 }
 .right {
